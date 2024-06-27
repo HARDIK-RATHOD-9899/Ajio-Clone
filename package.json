@@ -1,0 +1,16 @@
+{
+  "name": "ajio-clone-main",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "sweetalert2": "^11.6.13"
+  }
+}

@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Ajio</title>
+</head>
+<body>
+
+    
+    <div class="header-container">
+        <header>
+            <div class="signin-customer-care">
+              
+                <ul>
+                    <li>
+                        <a href="#" id="username"></a>
+                     </li>
+                    <li onclick="showBox()">
+                       <a href="sign.html"><p id="signin" >Sign In / Join AJIO</p></a> 
+                     </li>
+                    
+                    <li>
+                        <a href="#">Customer Care</a>
+                     </li>
+                  <li>
+                      <div class="black-square-box">
+                          <a href="#">Visit AJIOLUXE</a>
+                      </div>
+                    </li>
+                    
+               </ul>
+            </div>
+            <div class="logo-box">
+                <a href="index.html">
+                    <img class="logo-img" src="images/Ajio-Logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="nav">
+                <div class="left-nav">
+                    <ul>
+
+                        <li onmouseover="showMenu('menItems')" onmouseout="hideMenu('menItems')">
+                            <a href="menStyles.html">MEN</a>
+                            <div class="hover-menu-container" id="menItems">
+                              <div>
+                              <div>
+                                <span>Shop By:</span>
+                              </div>
+                              <div class="cat-dropdown">
+                                <a href="#">CATEGORIES</a>
+                                <div class="content-box" id="catContent">
+                                  <div>
+                                    <ul><a href="index.html" >CLOTHING</a></ul>
+                                    <ul><a href="#" >FOOTWEAR</a></ul>
+                                    <ul><a href="#" >ACCESSORIES</a></ul>
+                                    <ul><a href="#" >ALL THAT'S NEW</a>
+                                      <li><a href="index.html" >New Clothing</a></li>
+                                      <li><a href="#" >New Footwear</a></li>
+                                      <li><a href="#" >New Accessories</a></li>
+                                    </ul>
+                                    <ul><a href="#" >AJIO GLOBAL</a></ul>
+                                    <ul><a href="#" >PLUS SIZE</a></ul>
+                                    <ul><a href="#" >NIGHT AND LOUNGEWEAR</a></ul>
+                                    <ul><a href="#" >GROOMING</a></ul>
+                                    <ul><a href="#" >ETHNIC AND FESTIVAL</a>
+                                     <li><a href="#">Kurtas and Shirts</a></li>
+
+                                     <li><a href="#" >Nehru Jackets</a></li>
+                                 </div>
+                                           <div>
+                                                <ul><a href="#" > Western Wear
+                                                    <li> <a href="index.html" >Jackets & Coats </a></li>
+                                                    <li> <a href="#"  href="#" >Jeans </a></li>
+                                                    <li> <a href="#" href="#" >Shirts </a></li>
+                                                    <li> <a href="#" >Shorts & 3/4ths </a></li>
+                                                    <li> <a href="#" href="#" >Sweatshirts & Hoodies </a></li>
+                                                    <li> <a href="#" href="#" >Track Pants </a></li>
+                                                    <li> <a href="#" href="#" >Trousers & Pants </a></li>
+                                                    <li> <a href="#" href="#" >T-Shirts </a></li>
+                                            </a></ul>
+                                            
+                                                <ul><a href="#"> Footwear
+                                                    <li> <a href="index.html" >Casual Shoes </a></li>
+                                                    <li> <a href="#" >Flip-Flops & Slippers </a></li>
+                                                    <li> <a href="#" >Formal Shoes </a></li>
+                                                    <li> <a href="#" >Sandals </a></li>
+                                                    <li> <a href="#" >Sneakers </a></li>
+                                                    <li> <a href="#" >Sports Shoes </a></li>
+                                               </a></ul> 
+                                            </div>
+                                            <div>
+                                                <ul><a href="#"> Accessories
+                                                    <li> <a href="#">Backpacks </a></li>
+                                                    <li> <a href="#">Bag & Wallets </a></li>
+                                                    <li> <a href="#">Belts </a></li>
+                                                    <li> <a href="#">Caps & Hats </a></li>
+                                                    <li> <a href="#">Fashion Accessories </a></li>
+                                                    <li> <a href="#">Socks </a></li>
+                                                    <li> <a href="#">Sunglasses & Frames </a></li>
+                                                    <li> <a href="#">Wallets </a></li>
+                                                    <li> <a href="#">Watches </a></li>
+                                                 </a></ul>
+                                              <ul><a href="#"> Precious Jewellery 
+                                                 <li> <a href="#">Gold And Silver Coins </a></li>
+                                                 <li> <a href="#"> Gold And Diamond Jewellery</a></li>
+                                                 <li> <a href="#">Silver Jewellery </a></li>
+                                              </a></ul>
+                                                
+                                               
+                                                  <ul><a href="#"> Innerwear
+                                                    <li> <a href="#">Briefs </a></li>
+                                                    <li> <a href="#">Trunks & Boxers </a></li>
+                                                    <li> <a href="#">Vests </a></li>
+                                                 </a></ul>
+                                            </div>
+                                    
+                                              <div>
+                                                <ul><a href="#"> Featured
+                                                    <li> <a href="#">Bags Under 1499 </a></li>
+                                                    <li> <a href="#">Footwear Under 1499 </a></li>
+                                                    <li> <a href="#">Jeans Under 1199 </a></li>
+                                                    <li> <a href="#">Shorts & 3/4ths Under 699 </a></li>
+                                                 </a></ul>
+                                           
+                                            
+                                                <ul><a href="#"> #Ajiorecommends
+                                                    <li> <a href="#">Denimology </a></li>
+                                                    <li> <a href="#">Graphic Archive </a></li>
+                                                    <li> <a href="#">Play Time </a></li>
+                                                 </a></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brands-dropdown" onmouseover="showMenu('manBrandContent')" onmouseout="hideMenu('manBrandContent')">
+                                        <a href="#">BRANDS</a>
+                                        <div class="content-box brand-content" id="manBrandContent">
+                                            <div>
+                                                
+                                                <ul><a href="#">Ajio Gold Brands</a>
+                                                        <li> <a href="#">Superdry </a></li>
+                                                        <li> <a href="#">Scotch & Soda </a></li>
+                                                        <li> <a href="#">GAP </a></li>
+                                                        <li> <a href="#">GAS</a></li>
+                                                        <li> <a href="#">GANT</a></li>
+                                                        <li> <a href="#">G Star Raw </a></li>
+                                                        <li> <a href="#">CLARKS</a></li>
+                                                        <li> <a href="#">EMPORIO ARMANI </a></li>
+                                                    </ul>
+                                                <ul><a href="#"> Exclusive Brands</a>
+                                                        <li> <a href="#">BUDA JEANS AND CO </a></li>
+                                                        <li> <a href="#">Netplay</a></li>
+                                                        <li> <a href="#">DNMX </a></li>
+                                                        <li> <a href="#">John Players </a></li>
+                                                        <li> <a href="#">Lee Cooper</a></li>
+                                                        <li> <a href="#">Teamspirit</a></li>
+                                                        <li> <a href="#">Performax</a></li>
+                                                        <li> <a href="#">Altheory</a></li>
+                                                        
+                                                    </ul>
+                                            </div>
+                                            <div>
+                                                <ul><a href="#"> International brands</a>
+                                                        <li> <a href="#">French Connection</a></li>
+                                                        <li> <a href="#">TOM TAILOR </a></li>
+                                                        <li> <a href="#">New Balance </a></li>
+                                                        <li> <a href="#">DIESEL </a></li>
+                                                        <li> <a href="#">LACOSTE </a></li>
+                                                        
+                                                    </ul>
+                                                <ul><a href="#" onclick="setProducts('shoes','Shoes for Men')">Footwear</a>
+                                                        <li> <a href="#">ADIDAS</a></li>
+                                                        <li> <a href="#">Campus</a></li>
+                                                        <li> <a href="#">Crocs</a></li>
+                                                        <li> <a href="#">Nike</a></li>
+                                                        <li> <a href="#">Puma</a></li>
+                                                        <li> <a href="#">Red Tape</a></li>
+                                                        <li> <a href="#">Reebok</a></li>
+                                                        <li> <a href="#">Sketchers</a></li>
+                                                        <li> <a href="#">UCB</a></li>
+                                                        <li> <a href="#">Woodland</a></li>
+                                                        <li> <a href="#">New Balance</a></li>
+                                                    </ul>
+                                            </div>
+                                            <div>
+                                                <ul><a href="#">Western Wear</a>
+                                                        <li> <a href="#">THE INDIAN GARAGE CO</a></li>
+                                                        <li> <a href="#">US Polo Assn</a></li>
+                                                        <li> <a href="#">LEVIS</a></li>
+                                                        <li> <a href="#">Louis Philippe</a></li>
+                                                        <li> <a href="#">THE BEAR HOUSE</a></li>
+                                                        <li> <a href="#">KETCH</a></li>
+                                                        <li> <a href="#">DENNISLINGO PREMIMUM ATTIRE</a></li>
+                                                        <li> <a href="#">Jack & Jones</a></li>
+                                                        <li> <a href="#">Allen Solly</a></li>
+                                                        <li> <a href="#">Fort Collins</a></li>
+                                                        <li> <a href="#">SPIKAR</a></li>
+                                                       
+                                                    </ul>
+                                                 <ul><a href="#">Innerwear</a>
+                                                        <li> <a href="#">Calvin Klein Underwear</a></li>
+                                                        <li> <a href="#">Jockey</a></li>
+                                                        
+                                              </ul>
+                                            </div>
+                                            <div>
+                                               
+                                                <ul><a href="#">Accessories</a>
+                                                        <li> <a href="#">ADIDAS</a></li>
+                                                        <li> <a href="#">Allen Solly</a></li>
+                                                       
+                                                        <li> <a href="#">F Gear</a></li>
+                                                        <li> <a href="#">LEVIS</a></li>
+                                                        
+                                                        <li> <a href="#">Puma</a></li>
+                                                        <li> <a href="#">Rayban</a></li>
+                                                        <li> <a href="#">United Colors Of Benetton</a></li>
+                                                        
+                                                        <li> <a href="#">Woodland</a></li>
+                                                 
+                                                </ul>
+                                               <ul><a href="#">A-Z Brands</a></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li onmouseover="showMenu('womenItems') " onmouseout="hideMenu('womenItems')">
+                            <a href="womenStyles.html">WOMEN</a>
+                            <div class="hover-menu-container" id="womenItems">
+                                <div>
+                                    <div>
+                                        <span>Shop By:</span>
+                                    </div>
+                                    <div class="cat-dropdown">
+                                        <a href="#">CATEGORIES</a>
+                                        <div class="content-box" id="catContent">
+                                            <div>
+                                                
+                                                <ul><a href="index.html" > CLOTHING </a></ul>
+                                                <ul><a href="#"> FOOTWEAR </a></ul>
+                                                <ul><a href="#"> ACCESSORIES </a></ul>
+                                                <ul><a href="#" >ALL THATS NEW</a></ul>
+                                                <ul><a href="#"> CURVE SIZE </a></ul>
+                                                <ul><a href="#"> AJIO GLOBAL </a></ul>
+                                                <ul><a href="#"> NIGHT AND LOUNGEWEAR </a></ul>
+                                                <ul><a href="#"> BEAUTY </a></ul>
+                                                <ul><a href="#"> ATHLEISURE </a></ul>
+                                                 <ul><a href="#">FUSION WEAR</a>
+                                                    <li> <a href="#">Dresses & Gowns</a></li>
+                                                    <li> <a href="#">Kurtas</a></li>
+                                                    <li> <a href="#">Kurtis & Tunics</a></li>
+                                                   <li> <a href="#">Pants & Shorts</a></li>
+                                                   <li> <a href="#">Jackets & Shrugs</a></li>
+                                                   <li> <a href="#">Shirts,Tops & Tunics</a></li>
+                                                </ul>
+                                          </div>
+                                          <div>
+                                             <ul><a href="#" >Ethnic Wear</a>
+                                                        <li> <a href="index.html" >Kurtas </a></li>
+                                                        <li> <a href="#" >Dress Material</a></li>
+                                                        <li> <a href="#">Salwars & Churidars</a></li>
+                                                        <li> <a href="#" >Kurtis & Tunics</a></li>
+                                                        <li> <a href="#" >Sarees</a></li>
+                                                        <li> <a href="#">Dupattas</a></li>
+                                                        <li> <a href="#" >Kurta Suit Sets</a></li>
+                                                        <li> <a href="#">Blouses</a></li>
+                                                        <li> <a href="#">Leggings</a></li>
+                                                        
+                                                        <li> <a href="#">Skirt & Ghagras</a></li>
+                                                        <li> <a href="#">Shawls & Wraps</a></li>
+                                                        <li> <a href="#">Palazzos & Culottes</a></li>
+                                                    </ul>
+                                                 <ul><a href="#">JEWELLERY</a>
+                                                        <li> <a href="#">Gold And Silver Coins</a></li>
+                                                        <li> <a href="#">Gold And Diamond Jewellery</a></li>
+                                                        <li> <a href="#">Silver Jewellery</a></li>
+                                                        <li> <a href="#">Fashion Jewellery</a></li>
+                                                </ul>
+                                         </div>
+                                          <div>
+                                                <ul><a href="#">Lingerie Innerwear</a>
+                                                        <li> <a href="#">Bras</a></li>
+                                                        <li> <a href="#">Panties</a></li>
+                                                        <li> <a href="#">Camisoles & Slips</a></li>
+                                                        <li> <a href="#">Maternity Wear</a></li>
+                                                        <li> <a href="#">Thermal Wear</a></li>
+                                                </ul>
+                                            </d>
+                                               <ul><a href="#">ACCESSORIES</a>
+                                                        <li> <a href="#">Sunglasses & Fraames</a></li>
+                                                        <li> <a href="#">Watches</a></li>
+                                                        <li> <a href="#">Bag, Belts And Wallets</a></li>
+                                                        <li> <a href="#">Stoles And Scarves</a></li>
+                                                        <li> <a href="#">Socks And Stockings</a></li>
+                                                        <li> <a href="#">Caps</a></li>
+                                                        <li> <a href="#">Luggage & Trolleys</a></li>
+                                                    </ul>
+                                              <ul><a href="#">Featured</a>
+                                                    <li><a href="#" >Dresses Under 999</a></li>
+                                                    <li><a href="#">Footwear Under 799</a></li>
+                                                   
+                                                </ul>
+                                      </div>
+                                            <div>
+                                                <ul><a href="#">Footwear</a>
+                                                        <li> <a href="#">Casual Shoes</a></li>
+                                                        <li> <a href="#">Flat Sandals</a></li>
+                                                        <li> <a href="#">Sports Shoes</a></li>
+                                                        <li> <a href="#">Flip Flop & Slippers</a></li>
+                                                        <li> <a href="#">Heeled Sandals</a></li>
+                                                        <li> <a href="#">Heeled Shoes</a></li>
+                                                        <li> <a href="#">Boots</a></li>
+                                                    </ul>
+                                                 <ul><a href="#" >Western Wear</a>
+                                                        <li> <a href="#">Tops</a></li>
+                                                        <li> <a href="#">T-Shirts</a></li>
+                                                        <li> <a href="#">Jeans & Jeggings</a></li>
+                                                        <li> <a href="#">Dresses</a></li>
+                                                        <li> <a href="#">Trousers & Pants</a></li>
+                                                        <li> <a href="#">Shirts</a></li>
+                                                        <li> <a href="#">Track Pants</a></li>
+                                                        <li> <a href="#">Skirts & Shorts</a></li>
+                                                        <li> <a href="#">Jackets & Coats</a></li>
+                                                        <li> <a href="#" >Jumpsuits & Playsuits</a></li>
+                                                        <li> <a href="#" >Shrugs & Boleros</a></li>
+                                                        <li> <a href="#">Sweatshirts & Hoodies</a></li>
+                                                        <li> <a href="#">Sweaters & Cardigans</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brands-dropdown" onmouseover="showMenu('womenBrandContent')" onmouseout="hideMenu('womenBrandContent')">
+                                        <a href="#">BRANDS</a>
+                                        <div class="content-box brand-content" id="womenBrandContent">
+                                            <div>
+                                                <ul><a href="#">Ajio Gold Brands</a>
+                                                    <li> <a href="#">MARKS & SPENCER </a></li>
+                                                    <li> <a href="#">Superdry</a></li>
+                                                    <li> <a href="#">Armani Exchange</a></li>
+                                                    <li> <a href="#">GAP</a></li>
+                                                    <li> <a href="#">ALDO</a></li>
+                                                    <li> <a href="#">CLARKS</a></li>
+                                                    <li> <a href="#">AARKE RITU KUMAR</a></li>
+                                                </ul>
+                                                <ul><a href="#">Inernational Brands</a>
+                                                    <li> <a href="#">TRENDYOL</a></li>
+                                                    <li> <a href="#">NA-KD</a></li>
+                                                    <li> <a href="#">KOTON</a></li>
+                                                    <li> <a href="#">WKND</a></li>
+                                                    <li> <a href="#">FRENCH CONNECTION</a></li>
+                                                    <li> <a href="#">HAILYS</a></li>
+                                                    <li> <a href="#">LC WAIKIKI</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                              <ul><a href="#">EXCLUSIVE BRANDS</a>
+                                                    <li> <a href="#">AVAASA</a></li>
+                                                    <li> <a href="#">Fig</a></li>
+                                                    <li> <a href="#">Fyre Rose</a></li>
+                                                    <li> <a href="#">Buda Jeans</a></li>
+                                                    <li> <a href="#">Acai</a></li>
+                                                    <li> <a href="#">Outryt</a></li>
+                                                    <li> <a href="#">DNMX</a></li>
+                                                    <li> <a href="#">Fusion</a></li>
+                                                    <li> <a href="#">Teamspirit</a></li>
+                                                    <li> <a href="#">Rio</a></li>
+                                                    <li> <a href="#">Svrnaa</a></li>
+                                                </ul>
+                                          </div>
+                                          <div>
+                                                <ul><a href="#" onclick="setProducts('women','Clothes for women')">Western Wear</a>
+                                                    <li> <a href="#">Levis</a></li>
+                                                    <li> <a href="#">VERO MODA</a></li>
+                                                    <li> <a href="#">ONLY</a></li>
+                                                    <li> <a href="#">AND</a></li>
+                                                    <li> <a href="#">Tommy Hilfiger</a></li>
+                                                    <li> <a href="#">LEE COOPER</a></li>
+                                                    
+                                                </ul>
+                                             <ul><a href="#">Project Eve</a></ul>
+                                                <ul><a href="#" onclick="setProducts('saree','Sarees')">Ethnic Wear</a>
+                                                    <li> <a href="#">Alena</a></li>
+                                                    <li> <a href="#">Ishin</a></li>
+                                                    <li> <a href="#">Jaipur Kurti</a></li>
+                                                    
+                                                    <li> <a href="#">Biba</a></li>
+                                                    
+                                                    <li> <a href="#">W</a></li>
+                                                  <li> <a href="#">Ask</a></li>
+                                                </ul>
+                                                
+                                               
+
+                                            </div>
+                                            <div>
+                                               
+                                                <ul><a href="#">Footwear</a>
+                                                    <li> <a href="#">Carlton London</a></li>
+                                                    
+                                                    <li> <a href="#">Crocs</a></li>
+                                                    <li> <a href="#">Hi Attitude</a></li>
+                                                    
+                                                    <li> <a href="#">Nike</a></li>
+                                                    <li> <a href="#">Puma</a></li>
+                                                    <li> <a href="#">Sketchers</a></li>
+                                                </ul>
+                                            
+                                            
+                                                <ul><a href="#">Accessories</a>
+                                                    <li> <a href="#">Baggit</a></li>
+                                                    <li> <a href="#">Carprese</a></li>
+                                                    <li> <a href="#">Hidesign</a></li>
+                                                    <li> <a href="#">Lavie</a></li>
+                                                    <li> <a href="#">Mark & Keith</a></li>
+                                                    <li> <a href="#">Zaveri Pearls</a></li>
+                                                    
+                                                </ul>
+                                                <ul><a href="#">Lingerie Innerwear</a>
+                                                    <li> <a href="#">Enamor</a></li>
+                                                    <li> <a href="#">Jockey</a></li>
+                                                    <li> <a href="#">Marks & Spencer</a></li>
+                                                    <li> <a href="#">Triumph</a></li>
+                                                    <li> <a href="#">Zivame</a></li>
+                                                </ul>
+                                                <ul><a href="#">A-Z Brands</a></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--  Kids Category -->
+                        <li onmouseover="showMenu('kidsItems') " onmouseout="hideMenu('kidsItems')">
+                            <a href="#">KIDS</a>
+                            <div class="hover-menu-container" id="kidsItems">
+                                <div>
+                                    <div>
+                                        <span>Shop By:</span>
+                                    </div>
+                                    <div class="cat-dropdown">
+                                        <a href="#">CATEGORIES</a>
+                                        <div class="content-box" id="catContent">
+                                            <div>
+                                                <ul><a href="index.html">NEW In: Collections</a></ul>
+                                                <ul><a href="#">New In: Footwear & Accs </a></ul>
+                                                <ul><a href="#">Innerwear & Sleepwear </a></ul>
+                                                <ul><a href="#">Boys</a>
+                                                    <li> <a href="#">Denims & Trousers</a></li>
+                                                    <li> <a href="#">Joggers & Track Pants</a></li>
+                                                    <li> <a href="#">Outerwear</a></li>
+                                                    <li> <a href="#">Shirts</a></li>
+                                                    <li> <a href="#">Shorts & 3/4ths</a></li>
+                                                    <li> <a href="#">T-Shirts</a></li>
+                                                </ul>
+                                                <ul><a href="#">Shop By Age </a>
+                                                    <li> <a href="#">0 To 2 Years</a></li>
+                                                    <li> <a href="#">2 To 5 Years</a></li>
+                                                    <li> <a href="#">5 To 8 Years</a></li>
+                                                    <li> <a href="#">8 To 12 Years</a></li>
+                                                  <li> <a href="#">12 Years And Above</a></li>
+                                                </ul>
+                                          </div>
+                                            <div>
+                                                <ul><a href="#">Featured</a>
+                                                    <li> <a href="#">Denims Under 799</a></li>
+                                                    <li> <a href="#">Shirts Under 599</a></li>
+                                                    <li> <a href="#">Tshirts Under 399</a></li>
+                                                </ul>
+                                                <ul><a href="#">Girls</a>
+                                                    <li> <a href="#">Dresses & Frocks</a></li>
+                                                    <li> <a href="#">Jeans & Jeggings</a></li>
+                                                    <li> <a href="#">Leggings</a></li>
+                                                    <li> <a href="#">Outerwear</a></li>
+                                                    <li> <a href="#">Skirts & Shorts</a></li>
+                                                    <li> <a href="#">Tops & T-Shirts</a></li>
+                                                </ul>
+                                                <ul><a href="#">Shop By Age</a>
+                                                    <li> <a href="#">0 To 2 Years</a></li>
+                                                    <li> <a href="#">2 To 5 Years</a></li>
+                                                    <li> <a href="#">5 To 8 Years</a></li>
+                                                    <li> <a href="#">8 To 12 Years</a></li>
+                                                    <li> <a href="#">12 Years And Above</a></li>
+                                                </ul>
+                                          </div>
+                                          <div>
+                                                <ul><a href="#">Featured</a>
+                                                    <li> <a href="#">Dresses Under 499</a></li>
+                                                    <li> <a href="#">Tops Under 300</a></li>
+                                                </ul>
+                                            
+                                                <ul><a href="#">Baby</a>
+                                                    <li><a href="#">Sets</a></li>
+                                                </ul>
+                                                <ul><a href="#">Toys And Babycare</a>
+                                                    <li> <a href="#">Action-Figurine & Collectibles</a></li>
+                                                    <li> <a href="#">Creative & Education Toys</a></li>
+                                                    <li> <a href="#">Gaming, Robots & Vehicles</a></li>
+                                                    <li> <a href="#">Infants Toys</a></li>
+                                                    <li> <a href="#">Role & Pretend Play</a></li>
+                                                    <li> <a href="#">School, Party Supplies & Books</a></li>
+                                                    <li> <a href="#">Soft Toys</a></li>
+                                                    <li> <a href="#">Toy-Guns & Accessories</a></li>
+                                                </ul>
+                                              <ul><a href="#">Collections</a></ul>
+                                                    
+                                                <ul><a href="#">AJIO EXCLUSIVES</a></ul>
+                                                <ul><a href="#">FOOTWEAR & ACCESSORIES</a></ul>
+                        
+                                          </div>
+                                            <div>
+                                                <ul><a href="#">Featured BRANDS</a>
+                                                   
+                                                    <li> <a href="#">Crocs</a></li>
+                                                    
+                                                    <li> <a href="#">MINI KLUB</a></li>
+                                                    <li> <a href="#">Gini & Jony</a></li>
+                                                    <li> <a href="#">Hamleys</a></li>
+                                                    <li> <a href="#">Mothercare</a></li>
+                                                    <li> <a href="#">Marks & Spencer</a></li>
+                                                    <li> <a href="#">Pepe Jeans</a></li>
+                                                    <li> <a href="#">Peppermint</a></li>
+                                                    <li> <a href="#">UCB Kids</a></li>
+                                                    <li> <a href="#">U.S.P.A Kids</a></li>
+                                                    <li> <a href="#">MILA BABY</a></li>
+                                                  <li> <a href="#">MUJI</a></li>
+                                                  <li> <a href="#">Lee Cooper</a></li>
+                                                </ul>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                         
+                        <li onmouseover="showMenu('indieItems') " onmouseout="hideMenu('indieItems')">
+                            <a href="#">INDIE</a>
+                            <div class="hover-menu-container" id="indieItems">
+                                <div>
+                                    <div>
+                                        <span>Shop By:</span>
+                                    </div>
+                                    <div class="cat-dropdown">
+                                        <a href="#">CATEGORIES</a>
+                                        <div class="content-box" id="catContent">
+                                            <div>
+                                                <ul><a href="index.html">NEW In: CLOTHING</a></ul>
+                                                <ul><a href="#">New In: SAREES</a></ul>
+                                                <ul><a href="#">New In: FOOTWEAR & ACCS</a></ul>
+                                                <ul><a href="#">New In: HOME</a></ul>
+                                                <ul><a href="#">TOP SELLERS</a></ul>
+                                                <ul><a href="#">Clothing</a>
+                                                    <li> <a href="#">Sarees</a></li>
+                                                    <li> <a href="#">Kurtas</a></li>
+                                                    <li> <a href="#">Dresses</a></li>
+                                                    <li> <a href="#">Tops & Tunics</a></li>
+                                                    <li> <a href="#">Dupattas</a></li>
+                                                    <li> <a href="#">Dress Materials</a></li>
+                                                    <li> <a href="#">Blouses & Blouses Fabrics</a></li>
+                                                    <li> <a href="#">Pants, Skirts & Palazzos</a></li>
+                                                </ul>
+                                              <ul><a href="#">Accessories</a>
+                                                    <li> <a href="#">Bags & Belts</a></li>
+                                                    <li> <a href="#">Shawls & Wraps</a></li>
+                                                    <li> <a href="#">Stoles & Scarves</a></li>
+                                                </ul>
+                                          </div>
+                                          <div>
+                                              <ul><a href="#">HOME</a>
+                                                    <li> <a href="#">Bedsheets</a></li>
+                                                    <li> <a href="#">Cushions And Covers</a></li>
+                                                    <li> <a href="#">Curtains</a></li>
+                                                   <li> <a href="#">Table Linen</a></li>
+                                                  <li> <a href="#">Rugs, Carpets & Dhurries</a></li>
+                                                  
+                                                </ul>
+                                            <ul><a href="#">WINTER WEAR</a></ul>
+                                            <ul><a href="#">MENSWEAR</a>
+                                                    <li> <a href="#">Kurtas</a></li>
+                                                    <li> <a href="#">Shirts</a></li>
+                                                    <li> <a href="#">Ethnic Suits</a></li>
+                                                    <li> <a href="#">Jacket</a></li>
+                                                    <li> <a href="#">Accessories</a></li>
+                                                </ul>
+                                        
+                                                <ul><a href="#">Footwear</a>
+                                                    <li> <a href="#">Chappals</a></li>
+                                                    <li> <a href="#">Juttis</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                
+                                            
+                                                <ul><a href="#">Regional Specialities</a>
+                                                    <li><a href="#">Ajrak</a></li>
+                                                    <li><a href="#">Bagru</a></li>
+                                                    <li><a href="#">Bagh</a></li>
+                                                    <li><a href="#">Banaras & Brocades</a></li>
+                                                    <li><a href="#">Chanderi & Maheshwari</a></li>
+                                                    <li><a href="#">Indigo</a></li>
+                                                    <li><a href="#">IKAT</a></li>
+                                                    <li><a href="#">Kalamkari</a></li>
+                                                    <li><a href="#">Linen</a></li>
+                                                    <li><a href="#">Mangalgiri</a></li>
+                                                    <li><a href="#">Pipar & Balotra</a></li>
+                                                    <li><a href="#">Shibori</a></li>
+                                                    <li><a href="#">South Cotton</a></li>
+                                                    <li><a href="#">South Silk</a></li>
+                                                    
+                                                    <li><a href="#">Tant Tangail & Jamdani</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul><a href="#">Featured Brands</a>
+                                                    <li> <a href="#">Indie Picks</a></li>
+                                                    <li> <a href="#">Swadesh</a></li>
+                                                    <li> <a href="#">Fabindia</a></li>
+                                                    <li> <a href="#">Qura</a></li>
+                                                    <li> <a href="#">Indethnic</a></li>
+                                                    <li> <a href="#">Banarasi Silk Works</a></li>
+                                                    <li> <a href="#">Awesome</a></li>
+                                                    <li> <a href="#">Arteastri</a></li>
+                                                    <li> <a href="#">Sajasajo</a></li>
+                                                    <li> <a href="#">Angoshobha</a></li>
+                                                   <li> <a href="#">Weaversvilla</a></li>
+                                                    <li> <a href="#">Anukta</a></li>
+                                                    <li> <a href="#">Rangdeep</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                         
+                        <li onmouseover="showMenu('homeItems') " onmouseout="hideMenu('homeItems')">
+                            <a href="#">HOME AND KITCHEN</a>
+                            <div class="hover-menu-container" id="homeItems">
+                                <div>
+                                    <div>
+                                        <span>Shop By:</span>
+                                    </div>
+                                    <div class="cat-dropdown">
+                                        <a href="#">CATEGORIES</a>
+                                        <div class="content-box" id="catContent">
+                                          <div>
+                                            <ul><a href="#">BED LINEN</a>
+                                                    <li> <a href="#">Bedsheets</a></li>
+                                                    <li> <a href="#">Bedding Sets</a></li>
+                                                    <li> <a href="#">Blankets, Dohars & Quilts</a></li>
+                                                  <li> <a href="#">Comforters</a></li>
+                                                  <li> <a href="#">Bed Covers</a></li>
+                                                  <li> <a href="#">Mattress Protectors</a></li>
+                                                  <li> <a href="#">Quilt & Duvet Covers</a></li>
+                                                  
+                                                  
+                                                </ul>
+                                             <ul><a href="#">CUSHIONS & PILLOWS</a>
+                                                    <li> <a href="#">Cushions</a></li>
+                                                    <li> <a href="#">Pillows</a></li>
+                                                    <li> <a href="#">Bed Wedges & Neck Pillows</a></li>
+                                                  <li> <a href="#">Bolsters</a></li>
+                                                  <li> <a href="#">Cushion Covers</a></li>
+                                                  <li> <a href="#">Pillow Covers</a></li>
+                                                 
+                                                  
+                                                  
+                                                </ul>
+                                            <ul><a href="#">RUGS, CARPETS & MATS</a></ul>
+                                         </div>
+                                            <div>
+                                                <ul><a href="#">CURTAIN & ACCESSORIES</a>
+                                                    <li> <a href="#">Window Curtains</a></li>
+                                                    <li> <a href="#">Door Curtains</a></li>
+                                              </ul>
+                                                <ul><a href="#">KITCHEN</a>
+                                                    <li> <a href="#">Cookware & Cutlery</a></li>
+                                                    <li> <a href="#">Bakeware</a></li>
+                                                    <li> <a href="#">Kitchen Tools</a></li>
+                                                  <li> <a href="#">Kitchen Aprons, Gloves & Towel</a></li>
+                                                  <li> <a href="#">Kitchen Organisers</a></li>
+                                                  
+                                                </ul>
+                                              <ul><a href="#">DINING</a>
+                                                    <li> <a href="#">Serveware & Drinkware</a></li>
+                                                    <li> <a href="#">Table Linen Sets</a></li>
+                                                    <li> <a href="#">Table Covers & Runners</a></li>
+                                                  <li> <a href="#">Table Napkins</a></li>
+                                                  <li> <a href="#">Placemats & Coasters</a></li>
+                                                  
+                                                </ul>
+                                                <ul><a href="#">STATIONERY & ORGANISERS</a></ul>
+                                          </div>
+                                          <div>
+                                             <ul><a href="#">HOME DECOR</a>
+                                                    <li> <a href="#">Wall Decor</a></li>
+                                                    <li> <a href="#">Wall Shelves</a></li>
+                                                    <li> <a href="#">Clocks</a></li>
+                                                  <li> <a href="#">Photo Frames</a></li>
+                                                  <li> <a href="#">Mirrors</a></li>
+                                                  <li> <a href="#">Lamp,Diyas & Candle</a></li>
+                                                  <li> <a href="#">Home Fragnance</a></li>
+                                                  <li> <a href="#">Plants & Flowers</a></li>
+                                                  
+                                                </ul>
+                                            <ul><a href="#">FESTIVE GIFTS</a>
+                                                    <li> <a href="#">Bells & Wind Chimes</a></li>
+                                                    <li> <a href="#">Decorative pots, plates & jars</a></li>
+                                                    <li> <a href="#">Fengshui</a></li>
+                                                  <li> <a href="#">Indoor Fountains</a></li>
+                                                  <li> <a href="#">Religious Idols</a></li>
+                                                  <li> <a href="#">Vases</a></li>
+                                                  
+                                                  
+                                                </ul>
+                                            <ul><a href="#">GARDENING & PLANTERS</a></ul>
+                                        </div>
+                                            <div>
+                                                <ul><a href="#">BATH</a>
+                                                    <li> <a href="#">Bath Towel & Robes</a></li>
+                                                    <li> <a href="#">Hand & Face Towels</a></li>
+                                                    <li> <a href="#">Towel Sets</a></li>
+                                                    <li> <a href="#">Bath Curtains & Mats</a></li>
+                                                    <li> <a href="#">Bathroom Organisers</a></li>
+                                                    <li> <a href="#">Laundry Baskets & Dryers</a></li>
+                                                    <li> <a href="#">Holders & More</a></li>
+                                                   
+                                              </ul>
+                                                  <ul><a href="#">HOME ESSENTIALS</a></ul>
+                                              <ul><a href="#">FEATURED STORIES</a>
+                                                    <li> <a href="#">GIFT For Everyone Under 999</a></li>
+                                                    <li> <a href="#">Winter Carnival upto 60</a></li>
+                                                    <li> <a href="#">Kids Room Min 40</a></li>
+                                                    <li> <a href="#">Heritage Of India</a></li>
+                                              </ul>
+                                                    
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                   <div class="brands-dropdown" onmouseover="showMenu('HomeBrandContent')" onmouseout="hideMenu('HomeBrandContent')">
+                                        <a href="#">BRANDS</a>
+                                        <div class="content-box brand-content" id="HomeBrandContent">
+                                          <div>
+                                            <ul><a href="#">EXCLUSIVE BRANDS</a>
+                                                    <li> <a href="#">Indie Picks </a></li>
+                                                    <li> <a href="#">Muji</a></li>
+                                                    <li> <a href="#">Portico</a></li>
+                                                    <li> <a href="#">Stellar Home</a></li>
+                                                    <li> <a href="#">Bichauna</a></li>
+                                                    <li> <a href="#">Home Expressions USA</a></li>
+                                                    <li> <a href="#">Westa Home</a></li>
+                                                </ul>
+                                        </div>
+                                          <div>
+                                            <ul><a href="#">NEW TO EXPLORE</a>
+                                                    <li> <a href="#">Marks & Spencer </a></li>
+                                                    <li> <a href="#">HOMESAKE</a></li>
+                                                    <li> <a href="#">Jaipur Pride</a></li>
+                                                    <li> <a href="#">Arrabi</a></li>
+                                                    <li> <a href="#">Rosarahome</a></li>
+                                                    <li> <a href="#">HomeTown</a></li>
+                                                    <li> <a href="#">Homez Sparrow</a></li>
+                                                    <li> <a href="#">ExclusiveLane</a></li>
+                                                    <li> <a href="#">Meyer</a></li>
+                                                    <li> <a href="#">Order Happiness</a></li>
+                                                    <li> <a href="#">Aapno Rajasthan</a></li>
+                                                    <li> <a href="#">Random</a></li>
+                                                    <li> <a href="#">Rangoli</a></li>
+                                                    <li> <a href="#">Rubix Home</a></li>
+                                                </ul>
+                                        </div>
+                                          <div>
+                                            <ul><a href="#">FEATURED BRANDS</a>
+                                                    <li> <a href="#">Home Centre </a></li>
+                                                    <li> <a href="#">Raymond Home</a></li>
+                                                    <li> <a href="#">Story At Home</a></li>
+                                                    <li> <a href="#">Jaipur Fabric</a></li>
+                                                    <li> <a href="#">Homefab India</a></li>
+                                                    <li> <a href="#">Divine Casa</a></li>
+                                                    <li> <a href="#">Home Sizzler</a></li>
+                                                    <li> <a href="#">Swayam</a></li>
+                                                    <li> <a href="#">DdEcor</a></li>
+                                                    <li> <a href="#">Good Homes</a></li>
+                                                    <li> <a href="#">Cortina</a></li>
+                                                    <li> <a href="#">Romee</a></li>
+                                                    <li> <a href="#">E Craft India</a></li>
+                                                    <li> <a href="#">Bella casa</a></li>
+                                                    <li> <a href="#">Aazeem</a></li>
+                                                    <li> <a href="#">UniqChoice</a></li>
+                                                    <li> <a href="#">Kuber Industries</a></li>
+                                                </ul>
+                                        </div>
+                                            
+                                </div>
+                            </div>
+                        </li>
+                         
+                        
+                   </div>
+                
+                <div class="right-nav">
+                    <div class="search-bar">
+                        <input type="text" id="search" placeholder="Search AJIO">
+
+                    </div>
+                    <div onclick="showBox()" class="nav-icon-box nav-icon-box2">
+                        <a href="#">
+                            <img src="images/wishlistIcon.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="nav-icon-box">
+                        <a href="#">
+                            <img src="images/shopping-bag.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    
+   
+    
+    
+    <div class="main-container">   
+        
+       
+        <div class="slidershow middle">
+        
+            <div class="slides">
+                <input type="radio" name="r" id="r1">
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+                
+                
+        
+                <div class="slide s1">
+                   <a href="menStyles.html"> <img src="images/main.gif" alt="">
+                   </div></a>
+                <div class="slide">
+                   <img src="images/main2.jpg" alt=""> 
+                </div>
+                <div class="slide">
+                    <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-MAIN-P3-VanHeusenLouisPhilippe-min40.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-Main-P4-avaasadnmx-min60.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-MAIN-P5-BRPLMMTC-upto20.jpg" alt="">
+                </div>
+              
+              
+            </div>
+        
+       
+            <div class="">
+                <label for="r" class="bar"></label>
+                <label for="r" class="bar"></label>
+                <label for="r" class="bar"></label>
+                <label for="r" class="bar"></label>
+                <label for="r" class="bar"></label>
+                
+                
+            </div>
+        
+           
+            <!-- <div class="navigation">
+                <label for="r1" id="bar1" class="bar"></label>
+                <label for="r2" id="bar2" class="bar"></label>
+                <label for="r3" id="bar3" class="bar"></label>
+                <label for="r4" id="bar4" class="bar"></label>
+                <label for="r5" id="bar5" class="bar"></label>
+                
+                
+            </div> -->
+        </div>
+        
+
+    <div class="slidershow middle">
+        
+            <div class="slides">
+                <input type="radio" name="D" id="D1">
+                <input type="radio" name="D" id="D2">
+                
+              <div class="slide s1">
+                    <img src="images/line1.jpg" alt="">
+              </div>
+                <div class="slide">
+                    <img src="images/line2.jpg" alt="">
+                </div>
+           </div>
+            <div class="">
+                <label for="D" class="bar"></label>
+                <label for="D" class="bar"></label>
+            </div>
+            <div class="navigation">
+                <label for="D1" id="bar1" class="bar"></label>
+                <label for="D2" id="bar2" class="bar"></label>
+            </div>
+        </div>
+      
+    
+    <div class="space-white"></div>
+    <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-TopBanner-header.jpg" alt=""></div>
+  <div class="slidershow middle">
+      <div class="slides" >
+            <input type="radio" name="E" id="E1">
+            <input type="radio" name="E" id="E2">
+            <input type="radio" name="E" id="E3">
+            <input type="radio" name="E" id="E4">
+            <input type="radio" name="E" id="E5">
+            
+    
+            <div class="slide s1">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-Top-P1-NikeAscis-upto50%20(1).jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-Top-P2-adidas-upto50.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-TOP-P3-aldoclarks-upto40.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-top-P4-AzorteAltheoryOutryt-min50.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-top-P5-orchidbluesGilto-starting199extra35.jpg" alt="">
+                
+            </div>
+          <
+        </div>
+    
+        
+        <div class="">
+            <label for="E" class="bar"></label>
+            <label for="E" class="bar"></label>
+            <label for="E" class="bar"></label>
+            <label for="E" class="bar"></label>
+            <label for="E" class="bar"></label>
+            
+        </div>
+    
+        
+        <div class="navigation">
+            <label for="E1" id="bar1" class="bar"></label>
+            <label for="E2" id="bar2" class="bar"></label>
+            <label for="E3" id="bar3" class="bar"></label>
+            <label for="E4" id="bar4" class="bar"></label>
+            <label for="E5" id="bar5" class="bar"></label>
+            
+        </div>
+    </div>
+
+    
+    
+
+    <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Wallet-RelianceOne.jpg" alt=""></div>
+     
+     <div class="exp-header stripe"><img class="stripe" src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-TopBrands-header.jpg" alt=""></div>
+    <div class="card-container">
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-TopBrands-pumaadidas-min50.jpg " alt=""></div>
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-TopBrands-nikecrocs-upto50.jpg" alt=""></div>
+        <div class="box"><a href="menStyles.html"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-TopBrands-TIGCLKetch-upto70.jpg" alt=""></a></div>
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-TopBrands-NetplayDNMX-min50.jpg" alt=""></div>
+    </div>
+    
+        <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DailyBanner-Header.jpg" alt=""></div>
+
+   
+    <div class="slidershow middle">
+    
+        <div class="slides">
+            <input type="radio" name="p" id="p1">
+            <input type="radio" name="p" id="p2">
+            <input type="radio" name="p" id="p3">
+            
+    
+            <div class="slide s1">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-daily-P2-campus-upto50.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-daily-P3-crocs-upto60.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-daily-P4-Hritika-upto75.jpg" alt="">
+            </div>
+            
+        </div>
+    
+        
+        <div class="">
+            <label for="p" class="bar"></label>
+            <label for="p" class="bar"></label>
+            <label for="p" class="bar"></label>
+            
+        </div>
+    
+        
+        <div class="navigation">
+            <label for="p1" id="bar1" class="bar"></label>
+            <label for="p2" id="bar2" class="bar"></label>
+            <label for="p3" id="bar3" class="bar"></label>
+           
+        </div>
+    </div>
+    
+
+    <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DailyBanne-Header-1.jpg" alt=""></div>
+    
+     
+     <div class="slidershow middle">
+    
+        <div class="slides">
+            <input type="radio" name="q" id="q1">
+            <input type="radio" name="q" id="q2">
+            <input type="radio" name="q" id="q3">
+            <input type="radio" name="q" id="q4">
+            <input type="radio" name="q" id="q5">
+    
+            <div class="slide s1">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-dailybu-P1-dillingerfashor-under499extraupto35.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-dailybu-P2-reebokAdidas-flat35.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-DailyBU-P3-rk-upto60.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-dailyBU-P4-avaasafusion-under499.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-dailybu-P5-trendyolmavi-flat60.jpg" alt="">
+            </div>
+        </div>
+    
+        
+        <div class="">
+            <label for="q" class="bar"></label>
+            <label for="q" class="bar"></label>
+            <label for="q" class="bar"></label>
+            <label for="q" class="bar"></label>
+            <label for="q" class="bar"></label>
+        </div>
+    
+        
+        <div class="navigation">
+            <label for="q1" id="bar1" class="bar"></label>
+            <label for="q2" id="bar2" class="bar"></label>
+            <label for="q3" id="bar3" class="bar"></label>
+            <label for="q4" id="bar4" class="bar"></label>
+            <label for="q5" id="bar5" class="bar"></label>
+        </div>
+    </div>
+    
+    <div class="space-white"></div>
+    
+    <div class="card-container">
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Bestsellers-Header.jpg" alt=""></div>
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Bestsellers-firsttimediscount-upto40.jpg" alt=""></div>
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Bestsellers-wardrobesuperheroes-upto60.jpg" alt=""></div>
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Bestsellers-footwear-upto80.jpg" alt=""></div>
+    </div>
+
+
+    
+    <div class="space11" style="height: 5px;"></div>
+    <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-dailymen-header.jpg" alt=""></div>
+
+
+    
+    <div class="slidershow middle">
+    
+        <div class="slides">
+            <input type="radio" name="s" id="s1">
+            <input type="radio" name="s" id="s2">
+            <input type="radio" name="s" id="s3">
+            <input type="radio" name="s" id="s4">
+            <input type="radio" name="s" id="s5">
+    
+            <div class="slide s1">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-uhp-d-uhphim-p1-uspa-wrangler-min40.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-uhp-d-uhphim-p2-incite-jack&jones-4070.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-uhp-d-uhphim-p3-clarks-upto50.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-uhp-d-uhphim-p4-reebok-adidasoriginals-min30.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-uhp-d-uhphim-p5-gant-upto50.jpg" alt="">
+            </div>
+        </div>
+    
+        
+        <div class="">
+            <label for="s" class="bar"></label>
+            <label for="s" class="bar"></label>
+            <label for="s" class="bar"></label>
+            <label for="s" class="bar"></label>
+            <label for="s" class="bar"></label>
+        </div>
+    
+        
+        <div class="navigation">
+            <label for="s1" id="bar1" class="bar"></label>
+            <label for="s2" id="bar2" class="bar"></label>
+            <label for="s3" id="bar3" class="bar"></label>
+            <label for="s4" id="bar4" class="bar"></label>
+            <label for="s5" id="bar5" class="bar"></label>
+        </div>
+    </div>
+   
+<div class="space11" style="height: 5px;"></div>
+    <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-dailywomen-header.jpg" alt=""></div>
+    
+    <div class="slidershow middle">
+    
+        <div class="slides">
+            <input type="radio" name="a" id="a1">
+            <input type="radio" name="a" id="a2">
+            <input type="radio" name="a" id="a3">
+            <input type="radio" name="a" id="a4">
+            <input type="radio" name="a" id="a5">
+    
+            <div class="slide s1">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-UHPwomen-p1-uspa-arrow-flat50.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-UHPwomen-p2-nike-adidas-upto50.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-UHPwomen-p3-gap-upto50.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-UHPwomen-p4-hanoi-sutli-min40.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/18072023-UHP-D-UHPwomen-p5-encrustd-upto60.jpg" alt="">
+            </div>
+        </div>
+    
+        
+        <div class="">
+            <label for="a" class="bar"></label>
+            <label for="a" class="bar"></label>
+            <label for="a" class="bar"></label>
+            <label for="a" class="bar"></label>
+            <label for="a" class="bar"></label>
+        </div>
+    
+        
+        <div class="navigation">
+            <label for="a1" id="bar1" class="bar"></label>
+            <label for="a2" id="bar2" class="bar"></label>
+            <label for="a3" id="bar3" class="bar"></label>
+            <label for="a4" id="bar4" class="bar"></label>
+            <label for="a5" id="bar5" class="bar"></label>
+        </div>
+    </div>
+    
+    
+    
+    
+    <div class="space11" style="height: 5px;"></div>
+    <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-NC-header.jpg" alt=""></div>
+    
+    <div class="slidershow middle">
+    
+        <div class="slides">
+            <input type="radio" name="b" id="b1">
+            <input type="radio" name="b" id="b2">
+            <input type="radio" name="b" id="b3">
+            <input type="radio" name="b" id="b4">
+            <input type="radio" name="b" id="b5">
+    
+            <div class="slide s1">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-NC-P1-melorraPCJewles-starting1999.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-NC-P2-guessGiordanpo-upto70.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-NC-P3-UrbanSpaceMafatlal-upto80.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-NC-P4-RevolutionMCaffieneForestEssentials-upto80.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-NC-P5-voyageCarrera-upto70.jpg" alt="">
+            </div>
+        </div>
+    
+       
+        <div class="">
+            <label for="b" class="bar"></label>
+            <label for="b" class="bar"></label>
+            <label for="b" class="bar"></label>
+            <label for="b" class="bar"></label>
+            <label for="b" class="bar"></label>
+        </div>
+    
+        
+        <div class="navigation">
+            <label for="b1" id="bar1" class="bar"></label>
+            <label for="b2" id="bar2" class="bar"></label>
+            <label for="b3" id="bar3" class="bar"></label>
+            <label for="b4" id="bar4" class="bar"></label>
+            <label for="b5" id="bar5" class="bar"></label>
+        </div>
+    </div>
+    
+
+    
+    
+        <div class="space11" style="height: 5px;"></div>
+    <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-JIT-Header.jpg" alt=""></div>
+    
+    <div class="slidershow middle">
+    
+        <div class="slides">
+            <input type="radio" name="c" id="c1">
+            <input type="radio" name="c" id="c2">
+            <input type="radio" name="c" id="c3">
+            <input type="radio" name="c" id="c4">
+            <input type="radio" name="c" id="c5">
+    
+            <div class="slide s1">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-JIT-P1-VeroModaDennislingo-min60extraupto35.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-JIT-P2-campussutrathebearhouse-min60.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-JIT-P3-anjaneyaSareesZikaara-min65.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-JIT-P4-bucikShoetopia-starting249extra35.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/17072023-UHP-D-JIT-p5-actionredchief-flat50extraupto35.jpg" alt="">
+            </div>
+        </div>
+    
+        
+        <div class="">
+            <label for="c" class="bar"></label>
+            <label for="c" class="bar"></label>
+            <label for="c" class="bar"></label>
+            <label for="c" class="bar"></label>
+            <label for="c" class="bar"></label>
+        </div>
+    
+      
+        <div class="navigation">
+            <label for="c1" id="bar1" class="bar"></label>
+            <label for="c2" id="bar2" class="bar"></label>
+            <label for="c3" id="bar3" class="bar"></label>
+            <label for="c4" id="bar4" class="bar"></label>
+            <label for="c5" id="bar5" class="bar"></label>
+        </div>
+    </div>
+    
+   
+    
+    
+    
+    
+    <div class="space11" style="height: 5px;"></div>
+    <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Trends-header.jpg" alt=""></div>
+    
+    <div class="slidershow middle">
+    
+        <div class="slides">
+            <input type="radio" name="d" id="d1">
+            <input type="radio" name="d" id="d2">
+            <input type="radio" name="d" id="d3">
+            <input type="radio" name="d" id="d4">
+            <input type="radio" name="d" id="d5">
+    
+            <div class="slide s1">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Trends-BudaFyrerose-acai-upto60.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Trends-avaasadnmxnetplay-upto70.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Trends-azorteAltheoryOutryt-min50.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Trends-AvaasaSiyaahiFusion-upto70.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Trends-figrio-min50.jpg" alt="">
+            </div>
+        </div>
+    
+        
+        <div class="">
+            <label for="d" class="bar"></label>
+            <label for="d" class="bar"></label>
+            <label for="d" class="bar"></label>
+            <label for="d" class="bar"></label>
+            <label for="d" class="bar"></label>
+        </div>
+    
+        
+        <div class="navigation">
+            <label for="d1" id="bar1" class="bar"></label>
+            <label for="d2" id="bar2" class="bar"></label>
+            <label for="d3" id="bar3" class="bar"></label>
+            <label for="d4" id="bar4" class="bar"></label>
+            <label for="d5" id="bar5" class="bar"></label>
+        </div>
+    </div>
+    
+    
+    
+    
+        <div class="card-container">
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Westernwear-header.jpg " alt=""></div>
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Westernwear-SpykarWrangler-Starting999.jpg" alt=""></div>
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Westernwear-USPAThebearhouse-starting499.jpg" alt=""></div>
+        <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Westernwear-dressestops-starting599.jpg" alt=""></div>
+    </div>
+    <div class="card-container">
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Footwear-Header.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Footwear-pumaskechers-starting1199.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Footwear-redtapecampus-starting299.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-Footwear-uspaadidas-min50.jpg" alt=""></div>
+          
+    </div>
+    
+        
+    
+     <div class="stripe">
+        <a href="menStyles.html"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-HiddenGems-Header.jpg" alt=""></div></a>
+    <div class="space11" style="height: 3px;"></div>
+    
+     <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-header.jpg" alt=""></div>
+    <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-AjioGold.jpg" alt=""></div>
+   <div class="space11" style="height: 3px;"></div>
+    
+    
+   
+    <div class="card-container">
+          <div class="box">
+        <a href="menStyles.html">    <img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-westernwear.jpg" alt="">
+        </div></a>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-trends.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-snh.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-intbrands.jpg" alt=""></div>
+          
+    </div>
+     <div class="card-container">
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-sportswear.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-footwear.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-accessories.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-sarees.jpg" alt=""></div>
+          
+    </div>
+    
+     <div class="card-container">
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-wedding.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-homegrownbrands.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-indie.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-home.jpg" alt=""></div>
+          
+    </div>
+     <div class="card-container">
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-watches.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-loungeinnerwear.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-jewellery.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-womenlingerie.jpg" alt=""></div>
+          
+    </div>
+    
+    <div class="card-container">
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-beauty.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-yogawear.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-azorte.jpg" alt=""></div>
+          <div class="box"><img src="https://assets.ajio.com/cms/AJIO/WEB/01072023-UHP-D-DiscoverOnlineStores-max.jpg" alt=""></div>
+          
+    </div>
+    
+    
+     <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/Discover%20Online%20Stores%20(D)qqq.jpg" alt=""></div>
+    <div class="space11" style="height: 3px;"></div>
+     <div class="stripe"><img src="https://assets.ajio.com/cms/AJIO/WEB/08032022-D-unisex-ajiocares-strip11.jpg" alt=""></div>
+    <div><img style="min-width:1263px; width: 100%;" src="images/above-footer.png" alt=""></div>
+ </div>
+
+<footer>
+    <div class="menu_item">
+        <div class="item_list">
+            <div class="headline">Ajio</div>
+            <div class="ftr_items">
+                <a href="">Who we are</a>
+                <a href="">Join our team</a>
+                <a href="">Terms & conditions</a>
+                <a href="">We respect your privacy</a>
+                <a href="">Fee & Payments</a>
+                <a href="">Return & Refunds policy</a>
+                <a href="">Promotions Terms & Conditions</a>
+            </div>
+        </div>
+        <div class="item_list">
+            <div class="headline">Help</div>
+            <div class="ftr_items">
+                <a href="">Track your order</a>
+                <a href="">Frequently Asked Questions</a>
+                <a href="">Returns</a>
+                <a href="">Cancellations</a>
+                <a href="">Payments</a>
+                <a href="">Customer Care</a>
+                <a href="">How Do I Redeem My Coupon</a>
+            </div>
+        </div>
+        <div class="item_list">
+            <div class="headline">Shop By</div>
+            <div class="ftr_items">
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Kids</a>
+                <a href="">Indie</a>
+                <a href="">Stores</a>
+                <a href="">New Arrivals</a>
+                <a href="">Bramd Directory</a>
+                <a href="">Home</a>
+                <a href="">Collections</a>
+            </div>
+        </div>
+        <div class="item_list">
+            <div class="headline">Follow Us</div>
+            <div class="ftr_items">
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">Terms & conditions</a>
+                <a href="">Twitter</a>
+                <a href="">Pinterest</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="payment">
+        <div id="payment_method">
+            <div class="pay_title">
+                <p>Payment Methods</p>
+            </div>
+            <div class="pay_logo">
+                <div class="pay_img">
+                    <a href=""><img src="images/footer/net_banking.jpg" alt=""></a>
+                </div>
+                <div class="pay_img">
+                    <a href=""><img src="images/footer/visa.jpg" alt=""></a>
+                </div>
+                <div class="pay_img">
+                    <a href=""><img src="images/footer/master_card.jpg" alt=""></a>
+                </div>
+                <div class="pay_img">
+                    <a href=""><img src="images/footer/cash_on_delivery.jpg" alt=""></a>
+                </div>
+                <div class="pay_img">
+                    <a href=""><img src="images/footer/jio_money.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="secure_payment">
+            <div class="pay_title">
+                <p>Secure Systems</p>
+            </div>
+            <div class="pay_img">
+                <a href="">
+                    <img class="ssl-img" src="images/footer/ssl.png"alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="SCRIPT/main.js"></script>
+ </html>
