@@ -653,35 +653,6 @@
   ],
   "cart": [
    
-    {
-      "id": "7",
-      "imageURL": "https://assets.ajio.com/medias/sys_master/root/20210601/zMl7/60b54388f997ddb312af67ba/netplay_navy_blue_checked_shirt_with_patch_pocket.jpg",
-      "brand": "NETPLAY",
-      "product": "Checked Shirt with Patch Pocket",
-      "gender": "male",
-      "category": "shirt",
-      "price": 699,
-      "strikedOffPrice": 999
-    },
-    {
-      "id": "15",
-      "imageURL": "https://assets.ajio.com/medias/sys_master/root/hec/hd9/11748746526750/fort_collins_navy_blue_hooded_panelled_bomber_jacket.jpg",
-      "brand": "FORT COLLINS",
-      "product": "Hooded Panelled Bomber Jacket",
-      "gender": "male",
-      "category": "jacket",
-      "price": 1120,
-      "strikedOffPrice": 2799
-    },
-    {
-      "id": "2",
-      "imageURL": "https://assets.ajio.com/medias/sys_master/root/20210211/9EVN/60242efb7cdb8c1f143c6f5a/levis_black_washed_slim_fit_jeans.jpg",
-      "brand": "LEVIS",
-      "product": "Washed Slim Fit Jeans",
-      "gender": "male",
-      "category": "pants",
-      "price": 1959,
-      "strikedOffPrice": 2799
-    }
+
   ]
 }
