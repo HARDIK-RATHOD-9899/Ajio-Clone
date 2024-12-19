@@ -6,12 +6,18 @@ This project is an e-commerce website inspired by AJIO, featuring a user-friendl
 ## Preview Link 🔗
 [https://ajio-clone-ly6xwp8qb-rathod-hardiks-projects.vercel.app/]
 
-![image](https://github.com/user-attachments/assets/ca05c6fa-c461-4169-8f2c-8ff93108923e)
+![image](https://github.com/user-attachments/assets/ca05c6fa-c461-4169-8f2c-8ff93108923e)   
+
 ![ajio-7](https://github.com/user-attachments/assets/5594e73c-afc9-4496-af6c-535784cc845a)
+
 ![ajio-2](https://github.com/user-attachments/assets/6663de66-2a26-4666-a6af-a8a2261c58ab)
+
 ![ajio-3](https://github.com/user-attachments/assets/ccbd5e68-122b-4711-89cb-9ba97622b5d2)
+
 ![ajio-4](https://github.com/user-attachments/assets/02f02d1f-4ed3-4d3d-94f3-594bb44ed91f)
+
 ![ajio-5](https://github.com/user-attachments/assets/75eb79b0-37da-462a-b53d-c63b7d009ba3)
+
 ![ajio-6](https://github.com/user-attachments/assets/125e24e0-3e83-4083-a776-ed0a13a7ce97)
 
 
